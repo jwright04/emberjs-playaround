@@ -10,7 +10,7 @@
         {{#each model as |invitation|}}
             <tr>
                 <th>{{invitation.id}}</th>
-                <td>{{invitation.email}}</td>
+                <td><a href="mailto:{{invitation.email}}">{{invitation.email}}</a></td>
             </tr>
         {{/each}}
 

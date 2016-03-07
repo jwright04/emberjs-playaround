@@ -1,1 +1,22 @@
-{{outlet}}
+<h1>Contacts</h1>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each model as |contact|}}
+            <tr>
+                <th>{{contact.id}}</th>
+                <td>{{contact.InputName}}</td>
+                <td><a href="mailto:{{contact.InputEmailFirst}}"> {{contact.InputEmailFirst}}</a></td>
+                <td>{{contact.InputMessage}}</td>
+            </tr>
+        {{/each}}
+
+    </tbody>
+</table>
