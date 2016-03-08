@@ -1,1 +1,23 @@
-Hi contacts
+<h1>Contacts</h1>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <th>{{model.id}}</th>
+                <td>{{input value=model.InputName}}</td>
+                <td>{{input value=model.InputEmailFirst}}</td>
+                <td>{{input value=model.InputMessage}}</td>
+                <td>
+                    <button class="btn btn-success btn-xs" {{action 'updateContact' model}}>Update</button>
+                </td>
+            </tr>
+    </tbody>
+</table>
