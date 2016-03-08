@@ -50,6 +50,7 @@ export default Ember.Route.extend({
                 }, (error) => {
                     this.controllerFor('contact').setMessage('error', error);
                 });
+                newContact.rollbackAttributes();
                 return;
             }
             else {
