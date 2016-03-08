@@ -1,1 +1,19 @@
-hi invitations!
+<h1>Invitations</h1>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>E-mail</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <th>{{model.id}}</th>
+                <td>{{input value=model.email}}</td>
+                <td>
+                    <button class="btn btn-success btn-xs" {{action 'updateInvite' model }}>Update</button>
+                </td>
+            </tr>
+    </tbody>
+</table>
